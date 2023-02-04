@@ -7,11 +7,11 @@ from _base import db, app
 
 # INITIALISE DATABASE
 api = SQLSessionAPI(db, app)
-back_log_task_list = TaskList(stage="Back Log")
-completed_task_list = TaskList(stage="Completed")
-api.write_value(back_log_task_list)
-api.write_value(completed_task_list)
-print(api.read_all_values(TaskList))
+# back_log_task_list = TaskList(stage="Back Log")
+# completed_task_list = TaskList(stage="Completed")
+# api.write_value(back_log_task_list)
+# api.write_value(completed_task_list)
+# print(api.read_all_values(TaskList))
 
 @app.route("/task", methods=["GET", "POST", "DELETE"])
 def create_task():

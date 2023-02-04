@@ -1,7 +1,6 @@
 from sqlalchemy import Column, Integer, String, ForeignKey
 import json
 from _base import db
-from _types import *       
 
 class Task(db.Model):
     """Task is a class"""

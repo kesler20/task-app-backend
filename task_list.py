@@ -1,8 +1,6 @@
-
 from _base import db
 import json
 from sqlalchemy import Column, Integer, String
-from _types import *
 from sqlalchemy.orm import relationship
 
 
